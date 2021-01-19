@@ -32,6 +32,53 @@
   color: grey !important;
 }
 
+.header_sidebar {
+  width: 17.5rem;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  inset-inline: 1000;
+  transition: all 650ms ease-in-out;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.header_menu:hover > .header_sidebar {
+  left: 0;
+}
+
+.header_sidebar > li {
+  height: 40px;
+}
+
+.header_sidebar > li:first-child {
+  margin-top: 8.5rem;
+}
+
+.header_sidebar > li:nth-child(5) {
+  margin-top: 3rem;
+}
+
+.header_sidebar > li:last-child {
+  margin-top: 5rem;
+}
+
+.header_sidebar > li > p {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.header_sidebar > li:last-child > p {
+  font-size: 16px;
+  font-weight: 100;
+}
+
 .header_logo {
   /*height: 24px;*/
   width: 100px;
@@ -90,8 +137,8 @@
 }
 
 .header_basketCount {
-    position: absolute;
-    right: 50%;
-    left: 37.7%;
-    font-size: 16px;
+  position: absolute;
+  right: 50%;
+  left: 37.7%;
+  font-size: 16px;
 }

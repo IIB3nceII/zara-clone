@@ -9,6 +9,27 @@ function Header() {
     <div className="header">
       <div className="header_menu">
         <MenuIcon />
+
+        <ul className="header_sidebar">
+          <li>
+            <p>Woman</p>
+          </li>
+          <li>
+            <p>Man</p>
+          </li>
+          <li>
+            <p>Kids</p>
+          </li>
+          <li>
+            <p>Shoes & Bags</p>
+          </li>
+          <li>
+            <p>Join Life</p>
+          </li>
+          <li>
+            <p>+info</p>
+          </li>
+        </ul>
       </div>
       <div className="header_logo">
         <img src={ZaraLogo} alt="" />
