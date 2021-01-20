@@ -1,0 +1,40 @@
+.home{
+    width: 300%;
+}
+
+.home_container {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.home_container::-webkit-scrollbar {
+  display: none;
+}
+
+.home_container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.home_container > div{
+    width: 100%;
+    transition: transform 50ms ease-out;
+}
+
+.home_controls{
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    z-index: 100;
+}
+
+.home_controls > button{
+    position: absolute;
+    max-width: 200px;
+}
+
+.home_controlsRight{
+    right: 0;
+}
