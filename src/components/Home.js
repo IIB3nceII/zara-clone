@@ -7,13 +7,14 @@ import WomanThirdImg from "../assets/woman-third-bg.jpg";
 import WomanFourthImg from "../assets/woman-fourth-bg.jpg";
 import WomanFifthImg from "../assets/woman-fifth-bg.jpg";
 import WomanSixthImg from "../assets/woman-sixth-bg.jpg";
+import WelcomeContact from "./WelcomeContact";
 
 function Home() {
   const [margin, setMargin] = useState(0);
 
   return (
     <div className="home">
-      <div className="home_container" style={{ scrollPaddingLeft:{margin} }}>
+      <div className="home_container" style={{ scrollPaddingLeft: { margin } }}>
         <div className="man">
           <Item
             title="Sale"
@@ -49,6 +50,8 @@ function Home() {
             backgroundImg={WomanSixthImg}
             button={true}
           />
+
+          <WelcomeContact />
         </div>
 
         {/* ---------------------------------------------------------------------------------------------------------- */}
@@ -71,13 +74,6 @@ function Home() {
           />
 
           <Item
-            title="Lingerie"
-            desc=""
-            backgroundImg={WomanFourthImg}
-            button={true}
-          />
-
-          <Item
             title="Shoes & Bags"
             desc="Explore the new collection of Shoes & Bags Woman Collection"
             backgroundImg={WomanFifthImg}
@@ -90,6 +86,7 @@ function Home() {
             backgroundImg={WomanSixthImg}
             button={true}
           />
+          <WelcomeContact />
         </div>
 
         {/* ---------------------------------------------------------------------------------------------------------- */}
@@ -129,10 +126,14 @@ function Home() {
             backgroundImg={WomanSixthImg}
             button={true}
           />
+          <WelcomeContact />
         </div>
         <div className="home_controls">
           <button className="home_controlsLeft">Left</button>
-          <button className="home_controlsRight" onClick={()=>setMargin(margin+1000)}>
+          <button
+            className="home_controlsRight"
+            onClick={() => setMargin(margin + 1000)}
+          >
             Right
           </button>
         </div>

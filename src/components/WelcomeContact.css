@@ -1,0 +1,67 @@
+.welcomecontact {
+  height: 100vh;
+  width: 100%;
+}
+
+.welcomecontact_container {
+  position: relative;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.welcomecontact_email {
+  margin-bottom: 12vh;
+}
+
+.welcomecontact_email > h3 {
+  margin-bottom: 5vh;
+  text-transform: uppercase;
+}
+
+.welcomecontact_email > form > input {
+  outline-width: 0;
+  border: none;
+  border-bottom: 1px solid #858585;
+  padding-bottom: 10px;
+}
+
+.welcomecontact_social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 8vh;
+}
+
+.welcomecontact_social > p {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-right: 30px;
+}
+
+.welcomecontact_social > p:last-child {
+  padding: 0;
+}
+
+.welcomecontact_terms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.welcomecontact_terms > p {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  border-right: 1px solid black;
+  text-transform: uppercase;
+}
+
+.welcomecontact_terms > p:last-child{
+    padding-right: 0;
+    border: none;
+}
