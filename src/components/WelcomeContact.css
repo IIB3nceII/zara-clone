@@ -61,7 +61,11 @@
   text-transform: uppercase;
 }
 
-.welcomecontact_terms > p:last-child{
-    padding-right: 0;
-    border: none;
+.welcomecontact_terms > p:first-child {
+  padding-left: 0;
+}
+
+.welcomecontact_terms > p:last-child {
+  padding-right: 0;
+  border: none;
 }

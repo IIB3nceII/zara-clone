@@ -8,13 +8,12 @@ import WomanFourthImg from "../assets/woman-fourth-bg.jpg";
 import WomanFifthImg from "../assets/woman-fifth-bg.jpg";
 import WomanSixthImg from "../assets/woman-sixth-bg.jpg";
 import WelcomeContact from "./WelcomeContact";
+import MoveButton from "./MoveButton";
 
 function Home() {
-  const [margin, setMargin] = useState(0);
-
   return (
     <div className="home">
-      <div className="home_container" style={{ scrollPaddingLeft: { margin } }}>
+      <div className="home_container">
         <div className="man">
           <Item
             title="Sale"
@@ -52,6 +51,8 @@ function Home() {
           />
 
           <WelcomeContact />
+
+          
         </div>
 
         {/* ---------------------------------------------------------------------------------------------------------- */}
@@ -87,6 +88,8 @@ function Home() {
             button={true}
           />
           <WelcomeContact />
+
+       
         </div>
 
         {/* ---------------------------------------------------------------------------------------------------------- */}
@@ -127,16 +130,10 @@ function Home() {
             button={true}
           />
           <WelcomeContact />
+
+       
         </div>
-        <div className="home_controls">
-          <button className="home_controlsLeft">Left</button>
-          <button
-            className="home_controlsRight"
-            onClick={() => setMargin(margin + 1000)}
-          >
-            Right
-          </button>
-        </div>
+        {/*<MoveButton />*/}
       </div>
     </div>
   );

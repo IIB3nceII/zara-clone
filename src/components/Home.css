@@ -22,19 +22,3 @@
     transition: transform 50ms ease-out;
 }
 
-.home_controls{
-    width: 100vw;
-    display: flex;
-    position: fixed;
-    top: 50%;
-    z-index: 100;
-}
-
-.home_controls > button{
-    position: absolute;
-    max-width: 200px;
-}
-
-.home_controlsRight{
-    right: 0;
-}
