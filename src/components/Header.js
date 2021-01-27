@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import ZaraLogo from "../assets/zara-clone-logo.png";
+import ZaraLogo from "../assets/zara-clone-logo-nobg.png";
 import WorkOutlineIcon from "@material-ui/icons/WorkOutline";
 import MenuIcon from "@material-ui/icons/Menu";
 
